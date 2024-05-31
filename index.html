@@ -1,0 +1,184 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>demo task manager</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Outfit:wght@100..900&family=Young+Serif&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <h1> My Task<br> Manager</h1>
+            <div class="profileImage">
+                <img src="images/social media icon.png" alt="Profile Image">
+            </div>
+        </header> 
+        <div class="topBar">
+            <i class="fas fa-home icon"></i> 
+            <i class="fa fa-cog icon" aria-hidden="true"></i>
+            <i class="fas fa-bell icon"></i>
+            <span>Welcome Joy!</span>
+        </div>
+        <div class="navigation">
+            <button class="navBtn" id="todayBtn">Today<i class="fa fa-calculator navIcon" aria-hidden="true"></i></button>
+            <button class="navBtn" id="pendingBtn">Pending<i class="fa fa-spinner navIcon" aria-hidden="true"></i></button>
+            <button class="navBtn" id="completedBtn">Completed<i class="fa fa-check-square navIcon" aria-hidden="true"></i></button>
+        </div>
+        <div class="content">
+            <h2>Welcome!  to Task Manager</h2>
+            <p>Task Manager is a simple tool to help you keep track of your tasks. You can add tasks, mark them as  pending or completed. </p>
+            <p>Click on the "Add Tasks" button below to get started.</p>
+        </div>
+        <div id="todayContainer" class="container">
+            <div class="container1">
+                <h2>Today's Task</h2>
+            </div>
+            <div class="container2">
+                <table id="todayTaskTable"">
+                    <thead>
+                        <tr>
+                            <th>NAME</th> 
+                            <th>DATE</th>
+                            <th>TIME</th>
+                            <th>STATUS</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>See a movie</td>
+                            <td>5/21/2024</td>
+                            <td>14:00</td>
+                            <td>New</td>
+                        </tr>
+                        <tr>
+                            <td>See a movie</td>
+                            <td>5/21/2024</td>
+                            <td>14:00</td>
+                            <td>New</td>
+                        </tr>
+                        <tr>
+                            <td>See a movie</td>
+                            <td>5/21/2024</td>
+                            <td>14:00</td>
+                            <td>New</td>
+                        </tr>
+                        <tr>
+                            <td>See a movie</td>
+                            <td>5/21/2024</td>
+                            <td>14:00</td>
+                            <td>New</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div id="pendingContainer" class="container">
+            <div class="container1">
+                <h2>Pending Tasks</h2>
+            </div>
+            <div class="container2">
+                <!-- Add pending tasks table here -->
+            
+                <table id="pendingTaskTable">
+                    <thead>
+                        <tr>
+                            <th>NAME</th> 
+                            <th>DATE</th>
+                            <th>TIME</th>
+                            <th>STATUS</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>See a movie</td>
+                            <td>5/21/2024</td>
+                            <td>14:00</td>
+                            <td><i class="fa fa-spinner navIcon" aria-hidden="true"></i></td>
+                        </tr>
+                        <tr>
+                            <td>See a movie</td>
+                            <td>5/21/2024</td>
+                            <td>14:00</td>
+                            <td><i class="fa fa-spinner navIcon" aria-hidden="true"></i></td>
+                        </tr>
+                        <tr>
+                            <td>See a movie</td>
+                            <td>5/21/2024</td>
+                            <td>14:00</td>
+                            <td><i class="fa fa-spinner navIcon" aria-hidden="true"></i></td>
+                        </tr>
+                        
+                        <tr>
+                            <td>See a movie</td>
+                            <td>5/21/2024</td>
+                            <td>14:00</td>
+                            <td><i class="fa fa-spinner navIcon" aria-hidden="true"></i></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div id="completedContainer" class="container">
+            <div class="container1">
+                <h2>Completed Tasks</h2>
+            </div>
+            <div class="container2">
+                <!-- Add completed tasks table here -->
+                <table id="completedTaskTable">
+                    <thead>
+                        <tr>
+                            <th>NAME</th> 
+                            <th>DATE</th>
+                            <th>TIME</th>
+                            <th>STATUS</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>See a movie</td>
+                            <td>5/21/2024</td>
+                            <td>14:00</td>
+                            <td><i class="fa fa-check-square navIcon" aria-hidden="true"></i></td>
+                        </tr>
+                        <tr>
+                            <td >See a movie</td>
+                            <td>5/21/2024</td>
+                            <td>14:00</td>
+                            <td><i class="fa fa-check-square navIcon" aria-hidden="true"></i></td>
+                        </tr>
+                        <tr>
+                            <td>See a movie</td>
+                            <td>5/21/2024</td>
+                            <td>14:00</td>
+                            <td><i class="fa fa-check-square navIcon" aria-hidden="true"></i></td>
+                        </tr>
+                        <tr>
+                            <td>See a movie</td>
+                            <td>5/21/2024</td>
+                            <td>14:00</td>
+                            <td><i class="fa fa-check-square navIcon" aria-hidden="true"></i></td>
+                        </tr>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <button id="showFormButton">Add Tasks<i class="fa fa-plus" aria-hidden="true"></i></button>
+        <form id="taskForm">
+            <input type="text" id="taskInput" placeholder="Enter a task" required>
+            <input type="date" id="dateInput" required>
+            <input type="time" id="timeInput" required>
+            <button type="submit">Submit</button>
+        </form>
+        <ul id="taskList"></ul>
+    </div>
+    <script src="script.js"></script>  
+</body>
+</html>

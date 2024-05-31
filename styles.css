@@ -1,0 +1,220 @@
+body{
+  background-color: #e6ece8;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 17px;
+
+}
+#taskForm{
+  display: none;
+}
+.wrapper{
+  background-color: #BBDEFB;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+}
+header{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+h1{
+  font-family: "Josefin Slab", serif;
+  color:#AB47BC;
+  font-weight: 900;
+
+}
+img{
+  border-radius: 4em;
+  height: 15vh;
+  padding-top: 0.5em;
+
+}
+.topbar {
+  background-color: #333;
+  color: #fff;
+  padding: 15px;
+}
+.icon {
+  margin-right: 15px;
+  padding-bottom: 1em;
+  cursor: pointer;
+}
+.navIcon{
+  background-color: #333;
+  color: #fff;
+  padding: 5px;
+  margin-left: 0;
+}
+
+
+.navigation {
+  background-color:#E1BEE7;
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  height: 30px;
+  align-items: center;
+  border-radius: 5px;
+
+
+}
+.navBtn{
+  background-color:#E1BEE7;
+  box-shadow:     inset 5px 0 5px 0 #000000;
+  overflow: hidden;
+}
+
+
+.content {
+  padding: 16px;
+  margin: 0;  
+  height: 30vh;
+  text-align: center;
+
+   }
+button {
+  width: 100%;
+  color: black;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.container {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 80%;
+  max-width: 800px;
+  display: none;
+  align-self:center ;
+  margin: 25px;
+
+}
+
+.container1 h2 {
+  margin: 0;
+}
+.container2 {
+  padding: 20px;
+}
+.container1 {
+  background-color: #AB47BC;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  margin: 10px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 12px 15px;
+  text-align: left;
+}
+th {
+  background-color: #AB47BC;
+  color: white;
+}
+tr:nth-child(even) {
+  background-color: #F3E5F5;
+}
+tr:hover {
+  background-color: #E1BEE7;
+}
+td {
+  border-bottom: 1px solid #ddd;
+}
+@media (max-width: 600px) {
+
+  .navBtn{
+    width: 150px;
+    overflow: visible;
+    height: 30px;
+  }
+}
+
+
+
+
+/* For screens smaller than 600px */
+@media (max-width: 600px) {
+/* Adjustments for header */
+
+
+img {
+  height: 10vh; /* Decrease the height of the profile image */
+}
+/* Adjustments for navigation */
+.navigation {
+  flex-direction: row; /* Ensure buttons are side by side */
+  justify-content: space-between; /* Space out the buttons */
+  margin-bottom: 10px; /* Add some space below the buttons */
+  align-items: center;
+ 
+}
+.navBtn {
+  width: calc(30% - 10px); /* Adjust button width to fit */
+  
+  font-size: 8px; /* Decrease font size for smaller screens */
+  padding: 8px 12px; /* Decrease padding for smaller screens */
+
+  
+}
+
+.navBtn i {
+  font-size: 8px; /* Decrease icon size for smaller screens */
+}
+/* Adjustments for container */
+.container {
+  width: 95%; /* Make containers wider */
+  margin: 10px auto; /* Center containers */
+}
+/* Adjustments for button */
+#showFormButton {
+  width: 50%; /* Make button take half width */
+  margin: 10px auto; /* Center button */
+}
+/* Adjustments for form */
+#taskForm {
+  display: block; /* Display the form */
+  text-align: center; /* Center form elements */
+  margin-top: 20px; /* Add some space between button and form */
+}
+#taskInput,
+#dateInput,
+#timeInput,
+#taskForm button {
+  width: 90%; /* Make form inputs and button almost full width */
+  margin-bottom: 10px; /* Add some space between form elements */
+}
+
+.container1 {
+  font-size: 16px; /* Decrease font size for smaller screens */
+}
+
+.container2 {
+  align-self: center;
+}
+
+table {
+  font-size: 14px; /* Decrease font size for smaller screens */
+}
+
+th, td {
+  padding: 6px; /* Decrease padding for smaller screens */
+}
+}
+
